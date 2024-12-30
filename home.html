@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box box-custom" id="user-info">
+            <!-- ユーザー情報がここに表示される -->
+        </div>
+    </div>
+    <script>
+        // ログイン状態を確認
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (!user) {
+            // 未ログインならindex.htmlにリダイレクト
+            window.location.href = 'index.html';
+        } else {
+            // ログイン済みならユーザー情報を表示
+            document.getElementById('user-info').innerHTML = `
+                <img src="${user.picture}" alt="User Image" class="user-image">
+                <h2>${user.name}</h2>
+                <p>${user.email}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
