@@ -1,6 +1,7 @@
+// js/script.js
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
-    // You can now use the token to authenticate the user on your server
+    // 認証トークンをサーバー側で処理するためのコードをここに追加
 }
 
 window.onload = function () {
@@ -12,5 +13,5 @@ window.onload = function () {
         document.querySelector(".g_id_signin"),
         { theme: "outline", size: "large" }
     );
-    google.accounts.id.prompt(); // also display the One Tap dialog
+    google.accounts.id.prompt(); // ワンタップダイアログも表示
 }
