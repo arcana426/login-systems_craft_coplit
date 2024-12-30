@@ -1,2 +1,3 @@
-# login-systems_craft_coplit
-login用コードをcopilotと共同で作成しました
+# Login Systems Craft Copilot
+
+This project is a collaborative effort to create login systems using GitHub Copilot.
