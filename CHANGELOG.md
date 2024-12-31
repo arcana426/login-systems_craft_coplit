@@ -1,7 +1,7 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
-## version: [1.3] number: [63da5fa9]
+## version: [1.3] number: [1ab50dff]
 ### Added
 - home.html
 - CHANGELOG.md
