@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed file
 - index.html
+- home.html
 
 ### Changes
 - Delete unnecessary elements
