@@ -1,21 +1,40 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## version: [1.3.1] number: [6d83eeaa]
+### Added file
+- N/A
+
+### Changed file
+- index.html
+
+### Changes
+- Delete unnecessary elements
+
+### Deprecated
+- N/A
+
+### Removed
+- N/A
+
+### Security
+- N/A
+
 ## version: [1.3] number: [1ab50dff]
-### Added
+### Added files
 - home.html
 - CHANGELOG.md
 - js/script.js
 - css/custom.css
 - css/style.css
   
-### Changed
+### Changed files
 - index.html
 - js/script.js
 - css/custom.css
 - css/style.css
 
-### Changes
+### Changes files
 - Move javascript,css file
 - Changed to a modern style 
 - Modification of index.html by moving files
@@ -30,14 +49,17 @@ All notable changes to this project will be documented in this file.
 - N/A
 
 ## version: [1.0.0] number: [c46cb4c5]
-### Added
+### Added file
 - jekyll-gh-pages.yml
 - index.html
 - style.css
 - script.js
 - README.md
 
-### Changed
+### Changed files
+- N/A
+
+### Changes files
 - N/A
 
 ### Deprecated
