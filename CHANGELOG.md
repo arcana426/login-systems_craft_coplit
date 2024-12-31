@@ -1,6 +1,26 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## version: [1.3.2] number: [b4a5ada7]
+### Added file
+- N/A
+
+### Changed file
+- index.html
+- home.html
+
+### Changes
+- add footer
+
+### Deprecated
+- N/A
+
+### Removed
+- N/A
+
+### Security
+- N/A
+
 ## version: [1.3.1] number: [6d83eeaa]
 ### Added file
 - N/A
