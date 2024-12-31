@@ -1,6 +1,26 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## version: [1.3.3] number: [03b86ca3]
+### Added file
+- N/A
+
+### Changed file
+- index.html
+- home.html
+
+### Changes
+- Design Changes
+
+### Deprecated
+- N/A
+
+### Removed
+- N/A
+
+### Security
+- N/A
+
 ## version: [1.3.2] number: [b4a5ada7]
 ### Added file
 - N/A
