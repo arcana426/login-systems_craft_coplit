@@ -7,11 +7,13 @@
     background-color: #3273dc; /* Bulmaのprimary色 */
     color: white;
     text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 .user-image {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 128px;
+    height: 128px;
     margin-bottom: 20px;
 }
