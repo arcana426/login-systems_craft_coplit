@@ -1,16 +1,21 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
-## version: [1.1.1] number: [63da5fa9]
+## version: [1.3] number: [63da5fa9]
 ### Added
-- index.html
 - home.html
 - CHANGELOG.md
 - js/script.js
 - css/custom.css
 - css/style.css
-
+  
 ### Changed
+- index.html
+- js/script.js
+- css/custom.css
+- css/style.css
+
+### Changes
 - Move javascript,css file
 - Changed to a modern style 
 - Modification of index.html by moving files
