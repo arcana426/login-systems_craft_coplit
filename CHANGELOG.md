@@ -3,6 +3,7 @@
 All notable changes to this project will be documented in this file.
 ## version: [1.1.1] number: [63da5fa9]
 ### Added
+- index.html
 - home.html
 - CHANGELOG.md
 - js/script.js
@@ -12,7 +13,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Move javascript,css file
 - Changed to a modern style 
-- index.html
+- Modification of index.html by moving files
 
 ### Deprecated
 - N/A
