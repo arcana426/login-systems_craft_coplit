@@ -1,6 +1,27 @@
+/* css/user-info.css */
 .user-image {
     border-radius: 50%;
     width: 128px;
     height: 128px;
     margin-bottom: 20px;
+}
+
+.user-info-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.user-info-box h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-info-box p {
+    font-size: 18px;
+    color: #666;
 }
