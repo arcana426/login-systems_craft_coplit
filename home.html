@@ -8,12 +8,36 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
-<body class="is-unselectable">
-    <div class="container">
-        <div class="box box-custom" id="user-info">
-            <!-- ユーザー情報がここに表示される -->
+<body>
+    <section class="hero is-primary is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <span class="title is-4">My App</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="box box-custom" id="user-info">
+                    <!-- ユーザー情報がここに表示される -->
+                </div>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>My App</strong> by <a href="https://github.com/arcana426">arcana426</a>.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </section>
     <script>
         // ログイン状態を確認
         const user = JSON.parse(localStorage.getItem('user'));
@@ -23,9 +47,11 @@
         } else {
             // ログイン済みならユーザー情報を表示
             document.getElementById('user-info').innerHTML = `
-                <img src="${user.picture}" alt="User Image" class="user-image">
-                <h2>${user.name}</h2>
-                <p>${user.email}</p>
+                <figure class="image is-128x128 is-inline-block">
+                    <img class="is-rounded" src="${user.picture}" alt="User Image">
+                </figure>
+                <h2 class="title is-3">${user.name}</h2>
+                <p class="subtitle is-5">${user.email}</p>
             `;
         }
     </script>
