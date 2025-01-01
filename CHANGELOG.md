@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file.
 - Change home.html because the file was moved.
 - Move javascript file.
 
-### Removed
+### Deprecated
 - N/A
 
 ### Security
@@ -32,7 +32,7 @@ All notable changes to this project will be documented in this file.
 ### Changes
 - Design Changes.
 
-### Removed
+### Deprecated
 - N/A
 
 ### Security
@@ -49,7 +49,7 @@ All notable changes to this project will be documented in this file.
 ### Changes
 - add footer.
 
-### Removed
+### Deprecated
 - N/A
 
 ### Security
@@ -66,7 +66,7 @@ All notable changes to this project will be documented in this file.
 ### Changes
 - Delete unnecessary elements.
 
-### Removed
+### Deprecated
 - N/A
 
 ### Security
@@ -91,7 +91,7 @@ All notable changes to this project will be documented in this file.
 - Changed to a modern style.
 - Change index.html because the file was moved.
 
-### Removed
+### Deprecated
 - N/A
 
 ### Security
@@ -111,7 +111,7 @@ All notable changes to this project will be documented in this file.
 ### Changes files
 - N/A
 
-### Removed
+### Deprecated
 - N/A
 
 ### Security
