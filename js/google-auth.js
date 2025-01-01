@@ -1,5 +1,7 @@
 // js/google-auth.js
 
+console.log("google-auth.js has been loaded");
+
 // Handle the response from Google Sign-In
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
