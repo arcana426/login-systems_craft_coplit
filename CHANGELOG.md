@@ -1,6 +1,23 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## version: [1.3.6] number: [b1f5eab9] 1/2/2025
+### Added file
+- js/modal.js
+
+### Changed file
+- js/google-auth.js
+- js/user-info.js
+
+### Changes
+- Console messages can now be displayed.
+
+### Deprecated
+- N/A
+
+### Security
+- N/A
+
 ## version: [1.3.5] number: [b1f5eab9] 1/2/2025
 ### Added file
 - js/google-auth.js
