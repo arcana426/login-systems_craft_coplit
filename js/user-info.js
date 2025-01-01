@@ -1,3 +1,7 @@
+// js/user-info.js
+
+console.log("user-info.js has been loaded");
+
 // Display user information on the home page
 function displayUserInfo(user) {
     document.getElementById('user-info').innerHTML = `
