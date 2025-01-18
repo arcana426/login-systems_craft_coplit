@@ -14,19 +14,50 @@
     <link rel="stylesheet" href="css/log.css">
 </head>
 <body>
-    <section class="hero">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" id="check-js-button">
-                            <span class="icon">
-                                <i class="fa-solid fa-code"></i>
-                            </span>
-                        </a>
-                    </div>
+    <!-- error message -->
+    <div id="errorOverlay" style="display: block;">
+        <div class="error-overlay-content">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <h1>JavaScriptが読み込まれていません</h1>
+            <p>インターネットの接続を確認するか、ページを再読み込みしてください。</p>
+        </div>
+    </div>
+
+    <!-- nav -->
+    <nav class="navbar is-white">
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <span class="icon-wrapper" onclick="openModal()">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- modal -->
+    <div id="logModal" class="modal">
+        <div class="modal-background" onclick="closeModal()"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Log Viewer</p>
+                <button class="delete" aria-label="close" onclick="closeModal()"></button>
+            </header>
+            <section class="modal-card-body">
+                <div id="logContainer">
+                    <div id="Log" class="log-entry error">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <p>JavaScriptが正常に読み込まれました。</p>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </section>
+            <footer class="modal-card-foot">
+                <p class="is-size-6 has-text-info">開発者向け機能</p>
+            </footer>
+        </div>
+    </div>
+    
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="box is-warning">
@@ -41,18 +72,6 @@
             </div>
         </div>
     </section>
-
-    <!-- モーダル -->
-    <div class="modal" id="js-check-modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div class="box">
-                <h1 class="title">JavaScript Load Check</h1>
-                <p id="js-check-result"></p>
-            </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
     <footer class="footer has-background-light">
         <div class="content has-text-centered">
             <p>&copy; 2024 Arcana426.</p>
