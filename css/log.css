@@ -97,7 +97,6 @@
 .icon-wrapper:focus {
     outline: none;
     background-color: var(--primary-color);
-    color: #fff;
     transform: scale(1.1);
 }
 
