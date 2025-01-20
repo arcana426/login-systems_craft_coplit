@@ -1,4 +1,4 @@
-.navbar-item .icon-wrapper {
+.navbar-item {
     background-color: #3273dc;
     color: #fff;
     border-radius: 50%;
@@ -87,8 +87,10 @@
     border-radius: 10px;
     display: inline-block;
     cursor: pointer;
-    background-color: #fff;
     transition: background-color 0.3s, transform 0.2s ease-out;
+    background-color: #3273dc;
+    color: #fff;
+    border-radius: 50%;
 }
 
 .icon-wrapper:hover,
