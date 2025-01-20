@@ -1,13 +1,17 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
-## version: [1.3.6] number: [b1f5eab9] 1/2/2025
+## version: [1.5] number: [********] 1/20 /2025
 ### Added file
 - js/modal.js
+- css/log.css
+- css/layout.css
 
 ### Changed file
-- js/google-auth.js
-- js/user-info.js
+- js/modal.js 
+- css/log.css
+- css/layout.css
+- 
 
 ### Changes
 - Console messages can now be displayed.
