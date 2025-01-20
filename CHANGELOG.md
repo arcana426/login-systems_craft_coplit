@@ -44,11 +44,12 @@ All notable changes to this project will be documented in this file.
 
 ## version: [1.3.3] number: [03b86ca3] 12/31/2024
 ### Added file
-- N/A
+- css/button.css
 
 ### Changed file
 - index.html
 - home.html
+- css/button.css
 
 ### Changes
 - Design Changes.
