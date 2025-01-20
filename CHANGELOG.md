@@ -4,14 +4,15 @@ All notable changes to this project will be documented in this file.
 ## version: [1.5] number: [********] 1/20 /2025
 ### Added file
 - js/modal.js
+- js/log.js
 - css/log.css
 - css/layout.css
 
 ### Changed file
-- js/modal.js 
+- js/modal.js
+- js/log.js
 - css/log.css
 - css/layout.css
-- 
 
 ### Changes
 - Console messages can now be displayed.
