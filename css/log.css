@@ -88,17 +88,18 @@
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease-out;
-    background-color: #3273dc;
-    color: #fff;
-    border-radius: 50%;
+    background-color: #3273dc; /* 既存のスタイル */
+    color: #fff; /* 既存のスタイル */
 }
 
 .icon-wrapper:hover,
 .icon-wrapper:focus {
     outline: none;
-    background-color: var(--primary-color);
-    transform: scale(1.1);
+    background-color: var(--primary-color); /* 既存のスタイル */
+    color: #fff; /* 追加：ホバー時も文字色を白に維持 */
+    transform: scale(1.1); /* 既存のスタイル */
 }
+
 
 /* モーダルカード */
 .modal-card {
