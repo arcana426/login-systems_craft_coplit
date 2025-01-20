@@ -1,11 +1,12 @@
-/* ナビゲーションバー */
-.navbar-item .icon {
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+.navbar-item .icon-wrapper {
+    background-color: #3273dc;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
 }
 
-.navbar-item .icon:hover {
-    color: var(--primary-color);
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.8); /* 不透明な背景 */
 }
 
 /* 全画面エラーメッセージ */
@@ -98,11 +99,6 @@
     transform: scale(1.1);
 }
 
-/* モーダルの背景 */
-.modal-background {
-    background-color: var(--modal-bg-opacity);
-}
-
 /* モーダルカード */
 .modal-card {
     max-width: 600px;
@@ -110,6 +106,7 @@
     border-radius: 8px;
     overflow: hidden;
     animation: fadeIn 0.3s ease-out;
+    width: 90%;
 }
 
 @keyframes fadeIn {
