@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- error message -->
-    <div id="errorOverlay" style="display: block;">
+    <div id="errorOverlay" style="display: none;">
         <div class="error-overlay-content">
             <i class="fa-solid fa-circle-xmark"></i>
             <h1>JavaScriptが読み込まれていません</h1>
@@ -24,7 +24,7 @@
     </div>
 
     <!-- nav -->
-    <nav class="navbar is-white">
+    <nav class="navbar">
         <div class="navbar-end">
             <div class="navbar-item">
                 <span class="icon-wrapper" onclick="openModal()">
@@ -58,20 +58,20 @@
         </div>
     </div>
     
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="box is-warning">
-                    <h1 class="title">Welcome to My App</h1>
-                    <div id="g_id_onload"
-                         data-client_id="900815271183-o6knmghr75ol1gf5f3o3c21mkl8qpnpu.apps.googleusercontent.com"
-                         data-login_uri="home.html"
-                         data-auto_prompt="false">
-                    </div>
-                    <div class="g_id_signin" data-type="standard"></div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="box is-warning">
+                <h1 class="title">Welcome to My App</h1>
+                <div id="g_id_onload"
+                     data-client_id="900815271183-o6knmghr75ol1gf5f3o3c21mkl8qpnpu.apps.googleusercontent.com"
+                     data-login_uri="home.html"
+                     data-auto_prompt="false">
                 </div>
+                <div class="g_id_signin" data-type="standard"></div>
             </div>
         </div>
-    </section>
+    </div>
+
     <footer class="footer has-background-light">
         <div class="content has-text-centered">
             <p>&copy; 2024 Arcana426.</p>
