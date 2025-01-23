@@ -1,3 +1,15 @@
+window.onload = function() {
+    const jsLoaded = typeof google !== 'undefined';
+    const cssLoaded = window.getComputedStyle(document.body).getPropertyValue('--bulma-loaded') === 'true';
+
+    if (!jsLoaded && !cssLoaded) {
+        document.getElementById('bothErrorOverlay').style.display = 'block';
+    } else if (!jsLoaded) {
+        document.getElementById('errorOverlay').style.display = 'block';
+    } else if (!cssLoaded) {
+        document.getElementById('cssErrorOverlay').style.display = 'block';
+    }
+};
 
 // JavaScriptが読み込まれている場合の処理
 document.addEventListener('DOMContentLoaded', () => {
