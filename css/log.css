@@ -193,3 +193,8 @@
         padding: 10px;
     }
 }
+
+.test-style {
+    color: rgb(255, 0, 0); /* Red color */
+    display: block;
+}
