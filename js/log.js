@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Log) {
         Log.classList.remove('error');
         Log.classList.add('success');
+        console.log("jsが読み込まれています。")
     }
 });
 
