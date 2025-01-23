@@ -11,12 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Log) {
         Log.classList.remove('error');
         Log.classList.add('success');
-        console.log("jsが読み込まれています。")
     }
 });
 
-// CSSファイルの読み込み確認
 document.addEventListener('DOMContentLoaded', function () {
+    // Test element to check if CSS is loaded
     const testElement = document.createElement('div');
     testElement.classList.add('test-style');
     document.body.appendChild(testElement);
@@ -25,16 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const colorApplied = computedStyle.getPropertyValue('color') === 'rgb(255, 0, 0)';
     const displayApplied = computedStyle.getPropertyValue('display') === 'block';
 
-    if (colorApplied && displayApplied) {
-        console.log("style.css has been successfully loaded.");
-    } else {
-        console.error("style.css failed to load or styles are not applied correctly.");
-        if (!colorApplied) {
-            console.error("Expected color 'rgb(255, 0, 0)' but got '" + computedStyle.getPropertyValue('color') + "'.");
-        }
-        if (!displayApplied) {
-            console.error("Expected display 'block' but got '" + computedStyle.getPropertyValue('display') + "'.");
-        }
+    if (!colorApplied || !displayApplied) {
+        // Show the error overlay if CSS is not loaded correctly
+        document.getElementById('cssErrorOverlay').style.display = 'flex';
     }
 
     document.body.removeChild(testElement);
