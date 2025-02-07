@@ -37,9 +37,9 @@ window.onload = function () {
 
     // Check if the user is already logged in
     const user = JSON.parse(localStorage.getItem('user'));
-    if (user && window.location.pathname === '/home.html') {
+    if (user && window.location.pathname === '/login-systems_craft_coplit/home.html') {
         displayUserInfo(user);
-    } else if (!user && window.location.pathname === '/home.html') {
+    } else if (!user && window.location.pathname === '/login-systems_craft_coplit/home.html') {
         // Redirect to login page if not logged in
         window.location.href = 'index.html';
     }
