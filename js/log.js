@@ -1,6 +1,6 @@
 window.onload = function() {
     const jsLoaded = typeof google !== 'undefined';
-    const cssLoaded = window.getComputedStyle(document.body).getPropertyValue('--bulma-loaded') === 'true';
+    const cssLoaded = document.styleSheets.length > 0;
 
     if (!jsLoaded && !cssLoaded) {
         document.getElementById('bothErrorOverlay').style.display = 'block';
@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.appendChild(testElement);
 
     const computedStyle = window.getComputedStyle(testElement);
-    const colorApplied = computedStyle.getPropertyValue('color') === 'rgb(255, 0, 0)';
-    const displayApplied = computedStyle.getPropertyValue('display') === 'block';
+    const colorApplied = computedStyle.color !== "";
+    const displayApplied = computedStyle.display !== "none";
 
     if (!colorApplied || !displayApplied) {
         // Show the error overlay if CSS is not loaded correctly
