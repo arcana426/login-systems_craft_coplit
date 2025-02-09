@@ -84,6 +84,7 @@
     border-radius: 5px;
     background-color: var(--light-bg-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* 追加：画面サイズによる折り返し対応 */
 }
 
 .log-entry i {
@@ -106,15 +107,15 @@
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease-out;
-    background-color: #3273dc; /* 既存のスタイル */
-    color: #fff; /* 既存のスタイル */
+    background-color: #3273dc;
+    color: #fff;
 }
 
 .icon-wrapper:hover,
 .icon-wrapper:focus {
     outline: none;
-    color: #fff; /* 追加：ホバー時も文字色を白に維持 */
-    transform: scale(1.1); /* 既存のスタイル */
+    color: #fff;
+    transform: scale(1.1);
 }
 
 /* モーダルカード */
@@ -184,10 +185,13 @@
 
     .log-entry {
         padding: 6px 10px;
+        flex-direction: column; /* 追加：狭い画面で縦に並べる */
+        align-items: flex-start; /* 追加：アイコンとテキストを左揃え */
     }
 
     .log-entry i {
         font-size: 1.2rem;
+        margin-bottom: 5px;
     }
 
     .modal-card {
@@ -203,6 +207,6 @@
 }
 
 .test-style {
-    color: rgb(255, 0, 0); /* Red color */
+    color: rgb(255, 0, 0);
     display: block;
 }
