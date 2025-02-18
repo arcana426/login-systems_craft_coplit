@@ -55,32 +55,38 @@
         </div>
     </nav>
 
-    <!-- modal -->
-    <div id="logModal" class="modal">
-        <div class="modal-background" onclick="closeModal()"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Log Viewer</p>
-                <button class="delete" aria-label="close" onclick="closeModal()"></button>
-            </header>
-            <section class="modal-card-body">
-                <div id="logContainer">
-                    <div id="Log" class="log-entry error">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <div>
-                            <p>JavaScriptが正常に読み込まれました。</p>
-                        </div>
-                        <div>
-                            <p>CSSが正常に読み込まれました。</p>
-                        </div>
+<!-- modal -->
+<div id="logModal" class="modal">
+    <div class="modal-background" onclick="closeModal()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Log Viewer</p>
+            <button class="delete" aria-label="close" onclick="closeModal()"></button>
+        </header>
+        <section class="modal-card-body">
+            <div id="logContainer">
+                <!-- JavaScript読み込み確認用のボックス -->
+                <div id="jsLog" class="log-entry error">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <p>JavaScriptが正常に読み込まれました。</p>
                     </div>
                 </div>
-            </section>
-            <footer class="modal-card-foot">
-                <p class="is-size-6 has-text-info">開発者向け機能</p>
-            </footer>
-        </div>
+                <!-- CSS読み込み確認用のボックス -->
+                <div id="cssLog" class="log-entry error">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <p>CSSが正常に読み込まれました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            <p class="is-size-6 has-text-info">開発者向け機能</p>
+        </footer>
     </div>
+</div>
+
 
     <div class="hero-body">
         <div class="container has-text-centered">
