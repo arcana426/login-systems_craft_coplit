@@ -7,23 +7,23 @@
     --modal-bg-opacity: rgba(10, 10, 10, 0.86);
 }
 
-/* 円形のナビゲーションボタン（サイズ拡大） */
+/* 円形のナビゲーションボタン（デスクトップ：60px） */
 .navbar-item {
     background-color: #3273dc;
     color: #fff;
     border-radius: 50%;
-    width: 70px;  /* 以前の50pxから拡大 */
-    height: 70px;
+    width: 60px;  /* デスクトップでは60px */
+    height: 60px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-/* 画面サイズが小さい場合の調整 */
+/* 画面サイズが小さい場合の調整（モバイル用に50pxへ） */
 @media (max-width: 768px) {
     .navbar-item {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         padding: 8px;
     }
 }
